@@ -25,17 +25,20 @@
       :videoId="lesson.videoId"
       />
     <p>{{ lesson.text }}</p>
-      <ClientOnly>
-      <LessonCompleteButton 
+      <ClientOnly>  
+        <LessonCompleteButton 
       :model-value="isLessonComplete"
         @update:model-value="toggleComplete"
-      </ ClientOnly> 
+        />
+      </ClientOnly>
      />
   </div>
   </template>
   
 
   <script setup>
+import LessonCompleteButtonClient from '~~/components/LessonCompleteButton.client.vue';
+
   const course = useCourse();
   const route = useRoute();
 
