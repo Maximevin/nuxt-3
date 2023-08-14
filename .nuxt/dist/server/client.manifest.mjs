@@ -2,7 +2,7 @@ export default {
   "node_modules/nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
-    "file": "entry.147c678c.js",
+    "file": "entry.f1d0e4f3.js",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -19,7 +19,7 @@ export default {
   "virtual:nuxt:/Users/maximehmc/MasteringNuxt/nuxt-3/.nuxt/error-component.mjs": {
     "resourceType": "script",
     "module": true,
-    "file": "error-component.86ab0673.js",
+    "file": "error-component.a4138239.js",
     "src": "virtual:nuxt:/Users/maximehmc/MasteringNuxt/nuxt-3/.nuxt/error-component.mjs",
     "isDynamicEntry": true,
     "imports": [
@@ -33,13 +33,13 @@ export default {
   "pages/course/chapter/[chapterSlug]/lesson/[lessonSlug].vue": {
     "resourceType": "script",
     "module": true,
-    "file": "_lessonSlug_.b416a747.js",
+    "file": "_lessonSlug_.fca74696.js",
     "src": "pages/course/chapter/[chapterSlug]/lesson/[lessonSlug].vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
       "_useCourse.af3ef2a6.js",
-      "_composables.81f64ddd.js"
+      "_composables.03e91c26.js"
     ],
     "css": [
       "_lessonSlug_.0d045abd.css"
@@ -54,10 +54,10 @@ export default {
     "module": true,
     "file": "useCourse.af3ef2a6.js"
   },
-  "_composables.81f64ddd.js": {
+  "_composables.03e91c26.js": {
     "resourceType": "script",
     "module": true,
-    "file": "composables.81f64ddd.js",
+    "file": "composables.03e91c26.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
@@ -65,7 +65,7 @@ export default {
   "pages/course.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "course.4116076d.js",
+    "file": "course.211303b1.js",
     "src": "pages/course.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -76,7 +76,7 @@ export default {
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.56e9f73d.js",
+    "file": "index.585adf05.js",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -86,12 +86,12 @@ export default {
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "error-404.b4a25571.js",
+    "file": "error-404.40df20e1.js",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_composables.81f64ddd.js"
+      "_composables.03e91c26.js"
     ],
     "css": []
   },
@@ -102,11 +102,11 @@ export default {
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "error-500.b8b3ad45.js",
+    "file": "error-500.633d1c3d.js",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_composables.81f64ddd.js",
+      "_composables.03e91c26.js",
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
     "css": []
@@ -115,15 +115,15 @@ export default {
     "file": "error-500.e798523c.css",
     "resourceType": "style"
   },
-  "node_modules/@nuxt/ui-templates/dist/templates/error-500.css": {
-    "resourceType": "style",
-    "file": "error-500.e798523c.css",
-    "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.css"
-  },
   "pages/course/chapter/[chapterSlug]/lesson/[lessonSlug].css": {
     "resourceType": "style",
     "file": "_lessonSlug_.0d045abd.css",
     "src": "pages/course/chapter/[chapterSlug]/lesson/[lessonSlug].css"
+  },
+  "node_modules/@nuxt/ui-templates/dist/templates/error-500.css": {
+    "resourceType": "style",
+    "file": "error-500.e798523c.css",
+    "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.css"
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.css": {
     "resourceType": "style",

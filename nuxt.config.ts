@@ -2,7 +2,7 @@
 export default {
   modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
   generate: {
-      dir: 'public',
+      dir: 'tutonuxt/site/public',
   },
   vite: {
     build: { 
