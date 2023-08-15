@@ -31,7 +31,6 @@
         @update:model-value="toggleComplete"
         />
       </ClientOnly>
-     />
   </div>
   </template>
   
