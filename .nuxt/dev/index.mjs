@@ -5,10 +5,10 @@ import { join } from 'path';
 import { mkdirSync } from 'fs';
 import { parentPort, threadId } from 'worker_threads';
 import { provider, isWindows } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/std-env/dist/index.mjs';
-import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener, getQuery, createError } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/h3/dist/index.mjs';
+import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener, getQuery, createError } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/.pnpm/h3@1.8.0/node_modules/h3/dist/index.mjs';
 import { createRenderer } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import devalue from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/vue/server-renderer/index.mjs';
+import { renderToString } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/.pnpm/vue@3.3.4/node_modules/vue/server-renderer/index.mjs';
 import { parseURL, withQuery, joinURL } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/ufo/dist/index.mjs';
 import destr from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/destr/dist/index.mjs';
 import { snakeCase } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/scule/dist/index.mjs';
@@ -18,8 +18,8 @@ import { createHooks } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_m
 import { hash } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/ohash/dist/index.mjs';
 import { createStorage } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/unstorage/dist/index.mjs';
 import unstorage_47drivers_47fs from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/unstorage/drivers/fs.mjs';
-import defu from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/defu/dist/defu.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/radix3/dist/index.mjs';
+import defu from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/.pnpm/defu@6.1.2/node_modules/defu/dist/defu.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/maximehmc/MasteringNuxt/nuxt-3/node_modules/.pnpm/radix3@1.0.1/node_modules/radix3/dist/index.mjs';
 
 const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{}};
 const ENV_PREFIX = "NITRO_";
@@ -454,11 +454,11 @@ const errorHandler = (async function errorhandler(error, event) {
   event.node.res.end(await res.text());
 });
 
-const _lazy_oyNjjO = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_Wv7gSu = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_oyNjjO, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_oyNjjO, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_Wv7gSu, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_Wv7gSu, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
