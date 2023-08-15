@@ -28,40 +28,68 @@
       <ClientOnly>  
         <LessonCompleteButton 
       :model-value="isLessonComplete"
-        @update:model-value="toggleComplete"
+      @update:model-value="
+        throw createError('Could not update');
+      "
         />
       </ClientOnly>
   </div>
   </template>
   
-
   <script setup>
 import LessonCompleteButtonClient from '~~/components/LessonCompleteButton.client.vue';
 
   const course = useCourse();
   const route = useRoute();
 
-  const chapter = computed (() => {
-    return course.chapters.find(
-    (chapter) => chapter.slug === route.params.chapterSlug
+  definePageMeta({
+    middleware: function ({ params }, from) {
+    const course = useCourse();
+    const chapter = course.chapters.find(
+      (chapter) => chapter.slug === params.chapterSlug
     );
-  });
+    if (!chapter) {
+      return abortNavigation(
+        createError({
+          statusCode: 404,
+          message: 'Chapter not found',
+        })
+      );
+    }
+    const lesson = chapter.lessons.find(
+      (lesson) => lesson.slug === params.lessonSlug
+    );
+    if (!lesson) {
+      return abortNavigation(
+        createError({
+          statusCode: 404,
+          message: 'Lesson not found',
+        })
+      );
+    }
+  },
+});
 
-  const lesson = computed(() => {
+  const chapter = computed(() => {
+  return course.chapters.find(
+    (chapter) => chapter.slug === route.params.chapterSlug
+  );  
+});
+
+const lesson = computed(() => {
   return chapter.value.lessons.find(
     (lesson) => lesson.slug === route.params.lessonSlug
   );
 });
 
 const title = computed(() => {
-return `${lesson.value.title} - ${course.title}`;
+  return `${lesson.value.title} - ${course.title}`;
 });
-useHead ({
+useHead({
   title,
 });
 
 const progress = useLocalStorage('progress', []);
-
 const isLessonComplete = computed(() => {
   if (!progress.value[chapter.value.number - 1]) {
     return false;
