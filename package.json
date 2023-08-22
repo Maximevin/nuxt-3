@@ -1,11 +1,11 @@
 {
   "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
+   "scripts": {
+     "build": "nuxt build",
+      "start": "nuxt start",
+      "dev": "nuxt dev",
+     "generate": "nuxt generate",
+     "preview": "nuxt preview"
   },
   "devDependencies": {
     "@nuxtjs/supabase": "^1.0.2",
@@ -21,3 +21,4 @@
     "vue-router": "^4.2.4"
   }
 }
+

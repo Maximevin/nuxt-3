@@ -11,13 +11,14 @@
   </template>
   
   <script setup lang="ts">
+  
   const { title } = useCourse();
   const supabase = useSupabaseClient();
 
   const login = async () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'github',
-    })
+    });
 
     if (error) {
       console.error(error);
